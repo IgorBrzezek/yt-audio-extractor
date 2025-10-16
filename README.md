@@ -1,11 +1,10 @@
-=========================
-YouTube Audio Extractor
-=========================
+# YouTube Audio Extractor
+
 
 A versatile command-line script for downloading audio from YouTube videos as MP3 files. It uses yt-dlp for downloading and ffmpeg for conversion, offering detailed progress, batch processing, and features to bypass throttling.
 
 ----------------
-Features
+## Features
 ----------------
 
 - High-Quality Audio: Downloads the best available audio track by default.
