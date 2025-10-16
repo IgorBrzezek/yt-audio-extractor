@@ -3,9 +3,7 @@
 
 A versatile command-line script for downloading audio from YouTube videos as MP3 files. It uses yt-dlp for downloading and ffmpeg for conversion, offering detailed progress, batch processing, and features to bypass throttling.
 
-----------------
 ## Features
-----------------
 
 - High-Quality Audio: Downloads the best available audio track by default.
 - MP3 Conversion: Converts the downloaded audio to MP3 format.
@@ -18,9 +16,7 @@ A versatile command-line script for downloading audio from YouTube videos as MP3
 - Flexible Output: Specify a custom output filename (-o) or a destination directory (-dst).
 - Intelligent Error Handling: Detects when you forget to quote a URL and provides a helpful warning.
 
-----------------
-Requirements
-----------------
+## Requirements
 
 Before you begin, ensure you have the following installed and accessible in your system's PATH:
 
@@ -33,18 +29,14 @@ Before you begin, ensure you have the following installed and accessible in your
 4. colorama (Python library):
    pip install colorama
 
-----------------
-Installation
-----------------
+## Installation
 
 1. Make sure all the requirements listed above are installed.
 2. Download the script `youtube_audio_extractor.py` to your computer.
 3. (Optional on Linux/macOS) Make the script executable:
    chmod +x youtube_audio_extractor.py
 
-----------------
-Usage
-----------------
+## Usage
 
 Basic Command:
 The script is run from your terminal. Always enclose the URL in double quotes ("") to prevent errors with special characters.
@@ -95,9 +87,7 @@ Options:
   Option: --debug
   Description: Shows all raw, verbose output from `yt-dlp` and `ffmpeg` for troubleshooting.
 
-----------------
-Examples
-----------------
+## Examples
 
 Example 1: Basic Download
 This will download the audio from the URL and save it as `Video-Title.mp3` in the current directory.
@@ -119,17 +109,13 @@ Reads all URLs from `links.txt` and downloads them into the `audio_files` sub-di
 
   python youtube_audio_extractor.py --list links.txt --dst ./audio_files --overwrite
 
-----------------
-Important Note: Quoting URLs
-----------------
+## Important Note: Quoting URLs
 
 Your command-line shell (especially on Windows) uses the ampersand (&) character for special commands. Many YouTube URLs contain this character. If you do not wrap the URL in double quotes (""), your shell will cut the URL short, leading to errors. The script has a built-in warning system for this, but the best practice is to always use quotes.
 
   - Correct: python script.py "https://youtube.com/watch?v=abc&list=123"
   - Incorrect: python script.py https://youtube.com/watch?v=abc&list=123
 
-----------------
-License
-----------------
+## License
 
 This project is licensed under the MIT License.
